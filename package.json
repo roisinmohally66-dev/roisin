@@ -1,0 +1,15 @@
+{
+  "name": "roisin-workspace",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev:roisin": "npm --prefix roisin run dev",
+    "dev:roisinwebsite": "npm --prefix Roisinwebsite run dev",
+    "dev": "echo \"Run 'npm run dev:roisin' or 'npm run dev:roisinwebsite'\" && exit 0"
+  },
+  "dependencies": {
+    "react-redux": "^9.2.0",
+    "react-router-dom": "^7.9.4",
+    "redux": "^5.0.1"
+  }
+}
