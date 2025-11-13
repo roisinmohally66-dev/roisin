@@ -10,6 +10,7 @@ import Contact from "./pages/Contact";
 import ClickforImages from "./pages/ClickforImages";
 import ClickforVideos from "./pages/ClickforVideos";
 import roisinheadshot from "./Assets/roisinheadshot.jpg";
+import brownsculpture from "./Assets/brownsculpture.jpg";
 
 function HomePage() {
   return (
@@ -17,11 +18,7 @@ function HomePage() {
       <header className="hero">
         <img
           className="hero-img left"
-          src={
-            typeof window !== "undefined"
-              ? window.location.origin + "/roisinheadshot.jpg"
-              : "/roisinheadshot.jpg"
-          }
+          src={roisinheadshot}
           alt="Róisín Mohally headshot"
           loading="lazy"
           width={400}
@@ -44,12 +41,8 @@ function HomePage() {
         <section className="panel media-panel" aria-labelledby="media-title">
           <figure className="feature-thumb">
             <img
-              src={
-                typeof window !== "undefined"
-                  ? window.location.origin + "/brownsculpture.JPG"
-                  : "/brownscculpture.JPG"
-              }
-              alt="Detail from exhibition"
+              src={brownsculpture}
+              alt="Detail from exhibition (placeholder)"
               loading="lazy"
               width={600}
               height={400}
