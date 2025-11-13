@@ -133,7 +133,7 @@ function InstagramIcon() {
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/roisin">
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/artist-statement" element={<ArtistStatement />} />

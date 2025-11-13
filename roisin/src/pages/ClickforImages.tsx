@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./ClickForImages.css";
 
 import placeholder1 from "../Assets/placeholder1.JPG";
-import placeholder2 from "../Assets/placeholder2.JPG";
+import placeholder2 from "../Assets/rainbow.JPG";
 import placeholder3 from "../Assets/placeholder3.JPG";
 
 type ImageItem = {
