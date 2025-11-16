@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./ClickForImages.css";
 
-import placeholder1 from "../Assets/placeholder1.JPG";
-import placeholder2 from "../Assets/rainbow.JPG";
-import placeholder3 from "../Assets/placeholder3.JPG";
+import placeholder1 from "../Assets/Headshot.jpeg";
+import placeholder2 from "../Assets/Aestshot.jpeg";
+import placeholder3 from "../Assets/Passion .jpeg";
 
 type ImageItem = {
   src: string;
@@ -17,8 +17,8 @@ const items: ImageItem[] = [
   {
     src: placeholder1,
     title: "A Formal Business Headshot",
-    info: "Golden-hour shot on the river. 85mm prime, f/2.8, 1/800s, ISO 200.",
-    alt: "A white bird flying over the sea",
+    info: "a head shot of me looking good. talk about the lighting choice of location anf background choice bla bal bla bla  b  bbbbbbbbbbbb bbb bbbbb bbbbbbbbbb bbbbbb bbbbbbbbbb bbbb bbbbbb bbbb bbbbbb TEST ",
+    alt: "lalalalalalalalalalalalalalalalalalalalalalalaLalalalalalalalalalalalalalalalala",
   },
   {
     src: placeholder2,
@@ -27,7 +27,7 @@ const items: ImageItem[] = [
     alt: "Many birds on rocks beside the sea",
   },
   {
-    src: placeholder3,
+    src:  placeholder3,
     title: "A Shot That Reflects My Passion In Life",
     info: "Spotted on a car roof after a local parade. 50mm, f/2.0.",
     alt: "Two puffins standing on grass",

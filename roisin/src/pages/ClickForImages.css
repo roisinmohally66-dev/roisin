@@ -40,6 +40,7 @@
 
 .card { display: flex; flex-direction: column; gap: 14px; }
 
+
 .frame {
   background: #111;
   padding: 8px;
@@ -61,8 +62,16 @@
 .caption-title { font-size: 20px; margin: 0 0 6px; font-weight: 700; }
 .caption-info  { margin: 0; line-height: 1.5; color: #444; }
 
+.caption {
+  min-height: 120px;   
+  display: flex;
+  flex-direction: column;
+}
 
-/* === Lightbox styles === */
+.caption-info {
+  white-space: normal;  
+}
+
 
 .lightbox-overlay {
   position: fixed;
