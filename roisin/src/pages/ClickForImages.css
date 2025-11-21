@@ -7,8 +7,8 @@
   background: #fff;
 }
 
-
 .topbar { margin-bottom: 16px; }
+
 .back-btn {
   display: inline-block;
   padding: 10px 14px;
@@ -19,7 +19,6 @@
   transition: transform 120ms ease, opacity 120ms ease;
 }
 .back-btn:hover { transform: translateY(-1px); opacity: 0.92; }
-
 
 .page-title {
   margin: 10px 0 28px;
@@ -37,8 +36,12 @@
 @media (max-width: 960px) { .image-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 640px) { .image-grid { grid-template-columns: 1fr; } }
 
-
-.card { display: flex; flex-direction: column; gap: 14px; }
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  cursor: pointer;
+}
 
 
 .frame {
@@ -51,7 +54,7 @@
 .frame img {
   display: block;
   width: 100%;
-  height: 220px;       
+  height: 220px;
   object-fit: cover;
   border-radius: 2px;
   transition: transform 200ms ease;
@@ -59,24 +62,27 @@
 .frame:hover img { transform: scale(1.015); }
 
 
-.caption-title { font-size: 20px; margin: 0 0 6px; font-weight: 700; }
-.caption-info  { margin: 0; line-height: 1.5; color: #444; }
+.caption-title {
+  font-size: 20px;
+  margin: 0;
+  font-weight: 700;
+}
+
 
 .caption {
-  min-height: 120px;   
   display: flex;
   flex-direction: column;
 }
-
 .caption-info {
-  white-space: normal;  
+  display: none;       
+  white-space: normal;
 }
 
 
 .lightbox-overlay {
   position: fixed;
   inset: 0;
-  background:rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.7);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -86,22 +92,28 @@
 .lightbox-content {
   background: #ffffff;
   border-radius: 16px;
-  padding: 1.5rem;
+  padding: 1.25rem 2rem;
   max-width: 90vw;
-  max-height: 90vh;
+  max-height: 90vh;        
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: 0.75rem;
+  justify-content: flex-start;  
+
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+  overflow-y: auto;             
 }
 
+
 .lightbox-img {
-  max-width: 80vw;
-  max-height: 70vh;
+  max-width: 80vw;      
+  max-height: 60vh;    
   object-fit: contain;
   border-radius: 12px;
 }
+
 
 .lightbox-close {
   align-self: flex-end;
@@ -117,10 +129,25 @@
 .lightbox-title {
   font-size: 1.4rem;
   font-weight: 700;
+  margin: 0.5rem 0 0.25rem; 
+  text-align: center;
 }
 
 .lightbox-info {
-  font-size: 0.95rem;
-  color: #111;
-  text-align: center;
+  text-align: left;        
+  width: 80%;              
+  max-width: 900px;        
+  margin: 0 auto;          
+  line-height: 1.6;
 }
+
+}
+
+.lightbox-content {
+  overflow-y: auto;  
+}
+
+.image-grid .caption-info {
+  display: none;
+}
+
