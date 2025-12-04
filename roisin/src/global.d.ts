@@ -50,13 +50,4 @@ declare module "*.png" {
   export default src;
 }
 
-<<<<<<< HEAD
-declare module "*.jpeg";
-declare module "*.jpg";
-declare module "*.JPG";
-declare module "*.png";
-declare module "*.PNG";
 
-
-=======
->>>>>>> 9a08ae2e84aeff0bbd59e2f9c971168f5acc75e7
