@@ -1,5 +1,6 @@
 import React from "react";
 import "./ClickForVideos.css";
+import { Link } from "react-router-dom";
 
 import production1 from "../Assets/production1.jpeg";
 import production2 from "../Assets/production2.jpeg";
@@ -11,9 +12,10 @@ const ClickForVideos: React.FC = () => {
     <div className="video-page">
 
       {/* Back Button */}
-      <a href="/" className="video-page__back-btn">
-        ← Back Home
-      </a>
+      <Link to="/" className="video-page__back-btn">
+  ← Back Home
+</Link>
+
 
       <main className="video-page__content">
 
