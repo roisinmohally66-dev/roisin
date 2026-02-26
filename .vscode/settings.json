@@ -1,0 +1,4 @@
+{
+  // Prevent VS Code from trying to fetch JSON schemas over the network (fixes schemastore ENOTFOUND warnings)
+  "json.schemaDownload.enable": false
+}
